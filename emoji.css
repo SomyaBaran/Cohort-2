@@ -12,12 +12,6 @@ body {
     height: 80vh;
     gap: 7vh;
 }
-/* .circle{
-    border: 1px solid black;
-    height: 30vh;
-    width: 30vh;
-    border-radius: 50%;
-} */
 .btn-class{
     display: flex;
     justify-content: space-between;
@@ -25,12 +19,10 @@ body {
 
 }
 .btn{
-    /* flex: 1; */
     padding: 1vh 3vw;
     border-radius: 20px;
     border: 1px solid #000;
     background-color: #ffffff;
-    /* transition: background-color 0.3s; */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -44,10 +36,8 @@ body {
     .btn {
         flex: 1;
         margin-right: 2vw;
-        /* padding: 8px 15px; */
     }
     .btn-class {
         width: 80%;
-        /* padding-left: 2vw; */
     }
 }
