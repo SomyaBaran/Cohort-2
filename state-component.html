@@ -1,0 +1,39 @@
+<!-- // better approach of what we did in react-foundation.html  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>State Component</title>
+  <body>
+    <div id="buttonParent"></div>
+
+    <script>
+      let state = {
+        count: 0
+      };
+
+      function onButtonPress() {
+        state.count++;
+        // buttonComponentReRender();
+      }
+
+    //   function buttonComponentReRender() {
+    //     document.getElementById("buttonParent").innerHTML = "";
+    //     const button = document.createElement("button");
+    //     button.innerHTML = `Counter ${state.count}`;
+    //     button.setAttribute("onclick", "onButtonPress()");
+    //     document.getElementById("buttonParent").appendChild(button);
+    //   }
+      function buttonComponent() {
+        const button = document.createElement("button");
+        button.innerHTML = `Counter ${state.count}`;
+        button.setAttribute("onclick", "onButtonPress()");
+        return button;
+      }
+      // buttonComponentReRender();
+    </script>
+  </body>
+</html>
