@@ -5,17 +5,12 @@ import {useState} from "react"; //it lets your component remember data across re
 
 function App() { //This defines a React component named App.
     const [count, setCount] = useState(0); // creates a state variable --> count is the value, setCount is the function to change it 
-    // function onClickHandler() {
-    //     setCount(count + 1);
-        
-    // }
   return (
     <div>
       <CustomButton count={count} setCount={setCount}></CustomButton>
     </div>
   )
 }
-//component
 
 function CustomButton(props){
 
