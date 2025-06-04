@@ -9,6 +9,11 @@ function App() {
   )
 }
 function Header({ title }) { // {title} --> this type of syntax is called destructuring
+  //function(props){
+  // return <div>
+  // props.title
+  // </div>
+  //}
   return <div>
     {title}
   </div>
