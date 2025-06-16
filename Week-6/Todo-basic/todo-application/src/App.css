@@ -1,0 +1,42 @@
+.container {
+  background-color: #1e1e1e; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+  gap: 10px;
+}
+.box input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px; /* 👈 This adds space below input */
+}
+.todo-item {
+  margin: 20px 0;
+  font-family: poppins, sans-serif;
+}
+.box button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.box button:hover {
+  background-color: #0056b3;
+}
