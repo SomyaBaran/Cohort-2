@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import "./App.css";
 
-let counter = 4;
+let counter = 1;
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -22,6 +22,12 @@ function App() {
     setNewDescription(""); // this clears the description input 
   }
 
+  function handleCheckboxClick(id) { 
+    const updatedTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(updatedTodos); 
+  } 
+
+
   return (
     <div className="container">
       <div className="box">
@@ -39,8 +45,10 @@ function App() {
         {todos.map((todo) =>
           <Todo
             key={todo.id}
+            id={todo.id} 
             title={todo.title}
             description={todo.description}
+            onCheck={handleCheckboxClick} 
           />
         )}
       </div>
@@ -48,12 +56,18 @@ function App() {
   );
 }
 
-function Todo({ title, description }) {
+function Todo({ id, title, description, onCheck }) {
   return (
-
     <div className="todo-item">
-      <h2>{title}</h2>
-      <h5>{description}</h5>
+      <div className="todo-header">
+        <input type="checkbox" 
+        onChange={() => onCheck(id)} 
+        className="todo-checkbox" />
+        <div>
+          <h2 className="todo-title">{title}</h2>
+          <h3 className="todo-description">{description}</h3>
+        </div>
+      </div>
     </div>
   );
 }
