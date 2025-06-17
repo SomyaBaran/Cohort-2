@@ -1,31 +1,74 @@
 .container {
-  background-color: #1e1e1e; 
+  background: linear-gradient(
+  to bottom right,
+  #732cee,
+  #891cb8,
+  #cf119a,
+  #fd0065,
+  #fd3d46,
+  #fe6533
+);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .box {
-  background-color: white;
+  background-color: #1e1e1e;
   padding: 30px;
   border-radius: 12px;
-  width: 400px;
+  width: 600px;
+  height: 400px;
   text-align: center;
   max-height: 90vh;
   overflow-y: auto;
   gap: 10px;
 }
+
 .box input {
   padding: 10px;
   width: 80%;
   border: 1px solid #828282;
+  background-color: gray;
   border-radius: 8px;
   font-size: 16px;
-  margin-bottom: 10px; /* 👈 This adds space below input */
+  margin-bottom: 10px;
+  color: white;
 }
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.32);
+}
+
 .todo-item {
-  margin: 20px 0;
-  font-family: poppins, sans-serif;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  font-family: Poppins, sans-serif;
+}
+.todo-header {
+  display: flex;
+  gap: 2px;
+}
+.todo-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.todo-description {
+  margin-top: 5px;
+  color: #777;
+  font-weight: normal;
+}
+.todo-checkbox {
+  width: 30px;
+  height: 30px;
+  margin-left: -130px;
+  margin-top: 20px; 
+  accent-color: #007bff; 
 }
 .box button {
   margin-bottom: 20px;
@@ -37,6 +80,13 @@
   cursor: pointer;
   font-weight: bold;
 }
+
 .box button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 450px) {
+  .box {
+    width: 90vw;
+  }
 }
