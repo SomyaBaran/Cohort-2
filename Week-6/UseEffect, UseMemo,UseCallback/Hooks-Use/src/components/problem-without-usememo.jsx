@@ -34,6 +34,3 @@ function App() {
 }
 
 export default App;
-
-
-// This code is slightly unoptimistic because everytime App renders (when counter number changes) input is also changed --> slightly bad practice --> that's why we use useMemo. 
