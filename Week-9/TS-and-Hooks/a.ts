@@ -27,3 +27,13 @@ function isLegal(age: number) {
   }
 }
 isLegal(12);
+
+// Problem - 05 ---> Passing a function as an argumant inside a function 
+
+
+function runAfter1S(fn: () => void){
+    setTimeout(fn ,1000);
+}
+runAfter1S(function(){
+    console.log("hi there");
+})
