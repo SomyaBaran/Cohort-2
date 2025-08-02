@@ -7,3 +7,6 @@ console.log(x);
 // We add types (like string, number) so:
 // - Developers can easily understand what kind of input a function expects.
 // - It reduces bugs when the codebase gets bigger.
+
+
+////// Now lets look more into tsconfig.ts
