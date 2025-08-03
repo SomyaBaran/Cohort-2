@@ -9,4 +9,10 @@ console.log(x);
 // - It reduces bugs when the codebase gets bigger.
 
 
-////// Now lets look more into tsconfig.ts
+/// Lets understand about some important things in tsconfig.json file : --
+
+1. Target ---> It tells the TypeScript compiler what version of JavaScript to compile your TypeScript into.
+2. RootDir ---> where all your TS files are organised 
+3. OutDir ---> where all your JS files are organised 
+4. NoImplicitAny ---> It makes your code slightly less strict (like you dont have to give the type of name as string or age as number)
+5. removeComments ---> When you are running TS codebase with comments in it ... The js file wont show comments if removeComments is set true
