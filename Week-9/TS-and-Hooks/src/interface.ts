@@ -24,3 +24,30 @@ isLegal({
   age: 18
 //   email: "askahsdbg"  --> user can pass email here or leave it --> There wont be any squiggly lines, since email is an option 
 })
+
+
+//// Implementing Interface 
+// We can add a class in Interface too ---> HOW? see below  
+
+
+interface Person {
+    name: string;
+    age: number;
+    greet(phrase: string): void;
+}
+
+class Employee implements Person{
+    name: string;
+    age: number;
+
+    constructor(n: string, a: number){
+        this.name = n;
+        this.age = a;
+    }
+    greet(phrase: string){
+        console.log(` ${phrase} ${this.name}`);
+    }
+}
+
+const e = new Employee("Somya", 18);
+console.log(e.name);
