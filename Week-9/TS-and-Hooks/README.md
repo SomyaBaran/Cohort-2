@@ -16,3 +16,13 @@ console.log(x);
 3. OutDir ---> where all your JS files are organised 
 4. NoImplicitAny ---> It makes your code slightly less strict (like you dont have to give the type of name as string or age as number)
 5. removeComments ---> When you are running TS codebase with comments in it ... The js file wont show comments if removeComments is set true
+
+
+//// INTERFACES ////
+
+// The use of interface is helpful when defining functions with structured input.
+// For example: in functions like isLegal() or greet(), we might have to repeat the same object type again and again.
+// To avoid this repetition, we can use an interface.
+// An interface allows us to define a type (or schema) separately and reuse it wherever needed.
+// This reduces code duplication and makes the code cleaner and more maintainable.
+
