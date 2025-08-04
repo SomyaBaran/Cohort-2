@@ -27,6 +27,17 @@ console.log(x);
 // This reduces code duplication and makes the code cleaner and more maintainable.
 
 
+//// ***TYPES*** ////
+
+// Type is similar to Interface --> It let's you define the schema of data.
+// You can reuse the same type multiple times instead of rewriting the structure again and again. --> Just like interface 
+// Type allows unions and intersections --> Either this or that **type Status = "success" | "error" | "loading";**
+
+
+
 *NOTE*  : --
 1. Interfaces can be implemented by classes (**Types cant be!**) — that's one of the key differences between `interface` and `type`. 
                                          {***Popular interview question***}
+2. While writing code --> The difference between type and interface is --> we use "=" in types but not interface
+3. Type and Interface are mostly same .. nothing much different 
+4. `type` is more flexible than `interface`. It allows unions (`|`) and intersections (`&`).
