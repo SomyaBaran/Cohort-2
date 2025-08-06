@@ -42,6 +42,9 @@ interface Manager {
     department: string;
 }
 type TechTeam = Employee & Manager;
+
+// We can write it like this too .... but just to make things a little short and more readeable 
+
 // type TechTeam = {
 //     name: string;
 //     department: string;
