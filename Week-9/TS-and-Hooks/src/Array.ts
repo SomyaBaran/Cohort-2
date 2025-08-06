@@ -12,3 +12,25 @@ function maxValue(arr: number[]){
 }
 
 console.log(maxValue([1, 2, 3]));
+
+// Given the list of users, filter out the users that are legal (greater than 18 years of age)
+
+interface User {
+    firstName: string;
+    lastName: string;
+    age: number;
+}
+
+function filterUsers(users: User[]){
+    return users.filter(x => x.age >+ 18);
+}
+
+console.log(filterUsers([{
+    firstName: "Somya",
+    lastName: "Baranwal",
+    age: 18
+},{
+    firstName: "Rishi",
+    lastName: "Kant",
+    age: 23
+}]));
