@@ -41,6 +41,35 @@ runAfter1S(function(){
     console.log("hi there");
 })
 
+// Problem - 06 ---> Arrays in Typescript
+
+type Users = {
+    firstName: string;
+    lastName: string;
+    age: number;
+}
+
+function filterUser(users: Users[]){
+  users.forEach(user => {
+    if (user.age >= 18) {
+      console.log(`${user.firstName} is eligible to vote`);
+    } else {
+      console.log(`${user.firstName} is not eligible to vote`);
+    }
+  });
+}
+
+filterUser([{
+    firstName: "somya",
+    lastName: "baranwal",
+    age: 19
+},
+{
+    firstName: "Rishi",
+    lastName: "Kant",
+    age: 17
+}]);
+  
 
 
 
