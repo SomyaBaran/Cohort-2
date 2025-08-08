@@ -1,8 +1,19 @@
+// Example 1: Numeric enum (auto-assigned values: 0, 1, 2, 3)
 enum Directions {
     Up,
     Down,
     Left, 
     Right 
+}
+
+// Example 2: String enum (manually assigned values)
+// Note: If you assign one value manually, you must assign all
+
+enum Direction {
+    Up = "up",
+    Down = "down",
+    Left = "left", 
+    Right = "right"
 }
 
 function doSomething(keyPressed: Directions){
