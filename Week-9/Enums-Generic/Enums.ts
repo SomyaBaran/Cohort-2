@@ -16,20 +16,22 @@ enum Direction {
     Right = "right"
 }
 
-function doSomething(keyPressed: Directions){
-    // do some code here
-    if(keyPressed == Directions.Up){        // 0 --> Each value is automatically assigned like indexing
-        // do something --> lets say among us player will jump
+
+function doSomething(keyPressed: Directions) {
+    if (keyPressed == Directions.Up) {
+        console.log("Player jumps");
     }
-    if(keyPressed == Directions.Down){      // 1
-        // do something do something --> lets say among us player will Kneel down 
+    if (keyPressed == Directions.Down) {
+        console.log("Player kneels down");
     }
-    if(keyPressed == Directions.Left){      // 2
-        // do something --> lets say among us player will move left
+    if (keyPressed == Directions.Left) {
+        console.log("Player moves left");
     }
-    if(keyPressed == Directions.Right){     // 3
-        // do something --> lets say among us player will move right
+    if (keyPressed == Directions.Right) {
+        console.log("Player moves right");
     }
 }
-
-doSomething(Directions.Right);
+doSomething(Directions.Up); // 0
+doSomething(Directions.Down); // 1
+doSomething(Directions.Left);  // 2
+doSomething(Directions.Right);  // 3
