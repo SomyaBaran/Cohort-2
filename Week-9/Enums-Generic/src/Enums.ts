@@ -21,4 +21,7 @@ function doSomething(keyPressed: Directions){
     }
 }
 
-doSomething(Directions.Right);
+doSomething(Directions.Up); // 0
+doSomething(Directions.Down); // 1
+doSomething(Directions.Left);  // 2
+doSomething(Directions.Right);  // 3
