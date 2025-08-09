@@ -2,8 +2,8 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+     "rootDir": "./src",  // All the TS file is stored in src folder 
+     "outDir": "./dist",  // All the JS file is stored in dist folder 
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
