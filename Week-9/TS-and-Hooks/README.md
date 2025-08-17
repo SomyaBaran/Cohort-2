@@ -41,3 +41,54 @@ console.log(x);
 2. While writing code --> The difference between type and interface is --> we use "=" in types but not interface
 3. Type and Interface are mostly same .. nothing much different 
 4. `type` is more flexible than `interface`. It allows unions (`|`) and intersections (`&`).
+
+
+
+
+
+//// ***Generics*** //////
+
+
+
+// PROBLEM STATEMENT 
+
+// Let's say you have a fucntion that needs to return the first item in the array (array can be either of string or number)
+
+type Input = string | number;
+function firstEl(arr: Input[]){
+    return arr[0];
+}
+
+// const value = firstEl(["somya", "rishi"]);
+// console.log(value.toUpperCase());
+const value = firstEl(["somya", "rishi"]); 
+
+if (typeof value !== "string") {
+    console.log(value);
+}
+
+console.log(value);
+
+const num = 1;
+
+if (typeof num !== "number") {
+    console.log(num);
+}
+
+
+// This was a good code --> then why introducing generics?
+// Let's understand what's wrong with this code 
+
+// the thing getting stored in value is somya (since we are taking the 0th index value)
+// But when you try to apply some functions (can be pre-existing functions) --> its gonna show error 
+
+// why?
+// because TS can't identify on its own that value is gonna be string or a number 
+// it will work fine with string 
+// but not numbers (you can't do --> 1.toUpperCase) -> WRONG 
+
+// Also we can pass numbers and strings in an array combine 
+// then it will throw error
+
+
+
