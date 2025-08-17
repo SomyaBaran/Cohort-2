@@ -41,6 +41,10 @@ const el5 = getFirstElement<User>([
     {name: "somyabaranwal"}
 ])
 console.log(el?.toUpperCase());
+// el can be any type because we are using generics but we didn’t specify it’s string
+// that's why we are using "?"
+// Remember optional chaining (?) --> It basically asks “does this value exist?
+
 // console.log(el2);
 // console.log(el3);
 // console.log(el4);
