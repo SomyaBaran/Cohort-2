@@ -34,3 +34,33 @@ console.log(filterUsers([{
     lastName: "Kant",
     age: 23
 }]));
+
+
+
+////  Filter users array 
+type Users = {
+    firstName: string;
+    lastName: string;
+    age: number;
+}
+
+function filterUser(users: Users[]){
+  users.forEach(user => {
+    if (user.age >= 18) {
+      console.log(`${user.firstName} is eligible to vote`);
+    } else {
+      console.log(`${user.firstName} is not eligible to vote`);
+    }
+  });
+}
+
+filterUser([{
+    firstName: "somya",
+    lastName: "baranwal",
+    age: 19
+},
+{
+    firstName: "Rishi",
+    lastName: "Kant",
+    age: 17
+  }]);
